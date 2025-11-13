@@ -1,0 +1,1114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100vw;
+  /* overflow: auto; */
+}
+
+/* Preloader background */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Loader animation */
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ddd;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    padding: 10px 10px;
+    /* background-color: aqua; */
+    
+}
+/* .headcontainer{
+    background-color: black;
+    width: 95vw;
+    padding: 12px 12px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+} */
+.headcontainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 40px;
+
+  background: transparent;  
+  backdrop-filter: blur(12px);           
+  /* border-bottom: 1px solid rgba(255,255,255,0.2); */
+  box-shadow: 0px 8px 40px rgba(0,0,0,0.15);
+  z-index: 999999;                         
+}
+
+/* content ko thoda niche push karna zaroori hai! */
+/*  */
+
+
+header{
+    padding: 10px 10px;
+}
+.logo img{
+    height: 3rem;
+    width: 12rem;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: 2px solid rgba(3, 173, 12, 0.77);
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 30px;
+  backdrop-filter: blur(5px);
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(124, 205, 32, 1); /* green circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover .icon-circle {
+  transform: translateX(5px);
+}
+
+
+.glass-menu {
+  display: flex;
+  gap: 35px;
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.056);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-menu a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  transition: all 1s;
+}
+
+
+.glass-menu a:hover {
+  color: #10b401cb;  
+  text-decoration: underline;
+  transition: all 1s;
+  scale: 1.1;
+
+
+}
+.glass-menu a:active {
+  color: #10b401cb;  
+  scale: 2;
+
+}
+.plus{
+    height: 25px;
+    width: 20px;
+}
+
+main{
+    height: 110%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1762707826575-d48c35b9b666?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600")
+   
+}
+
+
+.container2{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.glass {
+  display: flex;
+  gap: 35px;
+  padding: 5px 5px;
+  background: rgba(29, 28, 28, 0.091);
+  backdrop-filter: blur(50px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 120px;
+}
+
+/* small green tag above Defending  */
+.small-tag {
+  color: #8aff2d;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.small-tag span {
+  color: rgba(255,255,255,0.7);
+}
+
+.left-text h1,
+.right-text h1 {
+  font-size: 95px;
+  line-height: 85px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.right-text p {
+  color: rgba(255,255,255,0.8);
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  max-width: 270px;
+  margin-top: 20px;
+}
+
+.green-dot {
+  color: #8aff2d;
+}
+
+.right-text .h1 {
+  margin-top: 230px;
+}
+
+/* .right-text p { */
+  /* margin-top: 60px; */
+/* } */
+
+.left-text{
+    /* background-color: #ddd; */
+    margin-top: 50px;
+}
+.services-section {
+    padding: 120px 120px;
+    position: relative;
+    color: white;
+}
+.services-section{
+    height: 150vh;
+    width: 100vw;
+    color: white;
+    /* background-color:black; */
+    background-image:url("https://images.unsplash.com/photo-1762258344642-ac1a2476d275?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=600") ;
+    /* background-image: url("https://versionbeta.istemanit.in/Images/new_herovertical.png"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+/* Right side large heading */
+/* .side-heading {
+    position: absolute;
+    right: 120px;
+    top: 0;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: right;
+    width: 400px;
+} */
+.side-heading {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 80px; /* cards se gap */
+}
+#services{
+    .side-heading {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    /* background-color: #ffffff; */
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    line-height: 50px;
+    margin-bottom: 20px; /* cards se gap */
+}
+}
+.green-dot {
+    color: #8aff2d;
+}
+
+/* Cards wrapper */
+/* .services-wrapper {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+} */
+ .services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.service-box {
+    width: 250px;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.15);
+    transition: 0.4s ease;
+    padding: 20px;
+    color: #fff;
+}
+
+/* ✅ Hover Effects */
+.service-box:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 40px rgba(0, 255, 0, 0.55);  /* ✅ Green glow stronger */
+    border: 1px solid rgba(0, 255, 0, 0.4);
+}
+
+/* Glass card */
+.service-box {
+    position: relative;
+    width: 32%;
+    padding: 40px;
+    border-radius: 20px;
+     background: rgba(255, 255, 255, 0.05);
+     
+     /* background-color: aqua; */
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 40px rgba(0, 255, 0, 0.1); /* green glow */
+}
+
+/* Number on top left */
+.index {
+    color: #8aff2d;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Card heading */
+.service-box h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Paragraph */
+.service-box p {
+    color: rgba(219, 214, 214, 0.8);
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+/* Arrow button */
+ .circle-btn {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #8aff2d;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+} 
+
+
+.circle-btn {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #8aff2d;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.small-tag2 {
+    color: #8aff2d;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.small-tag2 span {
+    color: rgba(255,255,255,0.7);
+}
+
+
+
+
+
+/* //hidden img */
+.hidden-images {
+    margin-top: 20px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    display: flex;
+    gap: 10px;
+}
+
+.hidden-images img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-card.active .hidden-images {
+    opacity: 1;
+    max-height: 200px;
+}
+
+
+.hero-btn {
+  margin-top: 200px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.hero-btn i {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  border-color: #4fff70;
+  background: rgba(79, 255, 112, 0.15);
+}
+
+.hero-btn:hover i {
+  transform: translateX(5px);
+}
+#shery-mouse-follower {
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.middle-image {
+    width: 200px;      
+    height: 250px;     
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.middle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   /* ✅ Image ab cut nahi hogi */
+    object-position: center;
+}
+
+/* ====== Section 3: Cybersecurity Section ====== */
+/* ====== Section 3: Cybersecurity Section ====== */
+#cybersecurity {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* 🔸 Background Image Zoom In-Out Animation */
+#cybersecurity::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://versionbeta.istemanit.in/Images/new_herovertical.png") no-repeat center center/cover;
+  filter: brightness(60%);
+  transform: scale(1);
+  animation: zoomInOut 10s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+/* 🔸 Dark Overlay for Readability */
+#cybersecurity::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* 
+
+/* ====== Content ====== */
+.cyber-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.cyber-container h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #a3ff12, #0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+
+.cyber-container p {
+  font-size: 1.1rem;
+  color: #ddd;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.8;
+}
+
+/* ====== Boxes Style ====== */
+.cyber-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.cyber-box {
+  min-width: 250px;
+  height: 100px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(0, 255, 100, 0.2);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.cyber-box.green {
+  background: rgba(100, 255, 100, 0.1);
+  border: 1px solid rgba(100, 255, 100, 0.3);
+}
+
+.cyber-box.gray {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cyber-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 255, 150, 0.4);
+  background: rgba(0, 255, 150, 0.15);
+}
+
+/* ====== Animations ====== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔸 Background Zoom Animation */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .cyber-container h2 {
+    font-size: 2rem;
+  }
+  .cyber-box {
+    min-width: 180px;
+    height: 80px;
+    font-size: 1rem;
+  }
+}
+
+#cybersecurity::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://versionbeta.istemanit.in/Images/new_herovertical.png") no-repeat center center/cover;
+  filter: brightness(60%) blur(0px);
+  transform: scale(1);
+  animation: zoomInOut 10s ease-in-out infinite alternate;
+  z-index: 0;
+  /* height: 200vh; */
+}
+/* ===== Clients Section ===== */
+.clients-section {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 60px 0;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients-section h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Slider container */
+.clients-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 120px;
+}
+
+/* Sliding track */
+.slide-track {
+  display: flex;
+  width: calc(200px * 8); /* logo width × total number of logos */
+  animation: scroll 25s linear infinite;
+}
+
+/* Each logo box */
+.slide {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo style */
+.slide img {
+  width: 120px;
+  height: auto;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
+}
+
+.slide img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Infinite Scroll Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ✅ Smooth green falling light for [1.02] box */
+.service-box[data-id="1"] {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Static background glow */
+.service-box[data-id="1"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center top,
+    rgba(140, 255, 50, 0.35),
+    rgba(140, 255, 50, 0.1) 70%,
+    transparent 100%
+  );
+  filter: blur(40px);
+  z-index: -1;
+}
+
+/* Falling light */
+.service-box[data-id="1"]::after {
+  content: "";
+  position: absolute;
+  top: -150%;
+  left: 0;
+  width: 100%;
+  height: 250%;
+  background: linear-gradient(
+    to bottom,
+    rgba(140, 255, 50, 0.4),
+    rgba(140, 255, 50, 0.15) 70%,
+    transparent 100%
+  );
+  filter: blur(35px);
+  animation: greenFall 6s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+  z-index: -1;
+}
+
+/* Animation: slow, natural light fall */
+@keyframes greenFall {
+  0% {
+    top: -150%;
+    opacity: 0.7;
+  }
+  50% {
+    top: 0%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0.6;
+  }
+}
+
+
+
+
+/* 🌟 Infinite smooth fade + zoom for hero image */
+.middle-image img {
+  opacity: 0.9;
+  transform: scale(1);
+  animation: fadeZoomLoop 8s ease-in-out infinite alternate;
+}
+
+/* 🔸 Keyframes for smooth infinite zoom in/out */
+@keyframes fadeZoomLoop {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+/* ==== Hero Section Background Animation (Clean) ==== */
+.main {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Background image with smooth infinite motion */
+.main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://images.unsplash.com/photo-1762707826575-d48c35b9b666?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600")
+    no-repeat center center/cover;
+  z-index: 0;
+  opacity: 1;
+  transform: scale(1.05);
+  animation: bgFloat 22s ease-in-out infinite alternate;
+}
+
+/* Floating + zoom animation */
+@keyframes bgFloat {
+  0% {
+    transform: scale(1.05) translate(0px, 0px);
+  }
+  50% {
+    transform: scale(1.12) translate(12px, -12px);
+  }
+  100% {
+    transform: scale(1.05) translate(-12px, 12px);
+  }
+}
+
+/* Ensure hero content is above background */
+.hero-container,
+.headcontainer {
+  position: relative;
+  z-index: 2;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.35); /* Transparent black layer */
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background 0.3s ease;
+}
+.services-section {
+  position: relative;
+  z-index: 1; /* keeps it below the header */
+}
+
+.service-box {
+  position: relative;
+  z-index: 1;
+}
+
+.service-box::before,
+.service-box::after {
+  z-index: 0; /* ensure glow stays behind header */
+}
+
+
+
+
+
+.contact-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Light effect layer */
+.contact-btn::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 250%;
+  background: radial-gradient(circle, rgba(0, 255, 100, 0.4), transparent 70%);
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Faster infinite animation on hover */
+.contact-btn:hover::before {
+  opacity: 1;
+  animation: lightFall 1.5s linear infinite; /* speed doubled */
+}
+
+/* Faster fall + brighter mid glow */
+@keyframes lightFall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+/* Optional outer glow while hover */
+.contact-btn:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 100, 0.45);
+  transition: box-shadow 0.3s ease;
+}
+
+
+
+
+.certification-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.35);
+}
+
+/* Green glow overlay */
+.certification-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 255, 100, 0.15),
+    transparent 70%
+  );
+  z-index: 1;
+}
+
+/* Content wrapper */
+.certification-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Left title section */
+.cert-left {
+  text-align: left;
+}
+
+.cert-left h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cert-left h1 span {
+  color: #00ff99;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/* Right certification cards */
+.cert-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Glass effect cards */
+.glass-card {
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(0, 255, 100, 0.25);
+  transition: all 0.3s ease;
+}
+
+/* Hover neon animation */
+.glass-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(0, 255, 100, 0.6);
+}
+
+
+
+/* Loader overlay */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#loader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Floating logo */
+.loader-logo {
+  width: 120px;
+  animation: logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Loading text */
+.loading-text {
+   margin-top: 50px;
+  color: #05c024d3;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Progress bar */
+.progress-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 94%;
+  margin-bottom: 70px;
+  margin-left: 50px;
+  height: 8px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background: #00ff88;
+  animation: progressLoad 3s linear forwards;
+}
+
+@keyframes progressLoad {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+
+
+
+
+
+
